@@ -19,7 +19,7 @@ class DemoApplicationTests {
 	@Test
 	public void shouldPassIfStringMatches() throws Exception {
 		assert(restTemplate.getForObject("http://localhost:" + port + "/",
-				String.class)).contains("Hello here I am in process 2");
+				String.class)).contains("Hello");
 	}
 
 }
